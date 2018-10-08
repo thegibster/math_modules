@@ -16,7 +16,3 @@ const summation = (num) => {
       return 'Not A number';
     }
 }
-
-console.log(summation(4));
-console.log(summation(12));
-console.log(summation('cat'));
