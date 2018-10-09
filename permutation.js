@@ -3,10 +3,10 @@
 
 let {factorial} = require('./factorial');
 
-const combination = (population, sample_size) => {
+const permutation = (population, sample_size) => {
   if (typeof(population) === 'number' && typeof(sample_size) === 'number' ){
     try {
-      return factorial(population) / (factorial(population - sample_size)*factorial(sample_size))
+      return factorial(population) / factorial(population - sample_size)
     }
     catch (err) {
       return err;
@@ -16,5 +16,5 @@ const combination = (population, sample_size) => {
     }
 }
 
-console.log(combination(4,2));
+console.log(permutation(8,5));
 
